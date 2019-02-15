@@ -32,7 +32,6 @@
 		36F0043922140DF100695C57 /* ExamProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0043822140DF100695C57 /* ExamProjectTests.swift */; };
 		36F0044422140DF100695C57 /* ExamProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F0044322140DF100695C57 /* ExamProjectUITests.swift */; };
 		811E5EC6E9FCA0E6BC864BA1 /* Pods_ExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1055150374251D2B2159E /* Pods_ExampleProject.framework */; };
-		C89109572466CD9C672F73C0 /* Pods_ExamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77DB7B1E07B046F6E12BB87 /* Pods_ExamProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +95,7 @@
 		36F0043F22140DF100695C57 /* ExampleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F0044322140DF100695C57 /* ExamProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamProjectUITests.swift; sourceTree = "<group>"; };
 		36F0044522140DF100695C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36F0045422140EFB00695C57 /* ExamProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExamProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		36F0045422140EFB00695C57 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		36F0045822141C5500695C57 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F0045A22141C5500695C57 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F1055150374251D2B2159E /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +114,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36403D322215626100655573 /* Alamofire_SwiftyJSON.framework in Frameworks */,
-				C89109572466CD9C672F73C0 /* Pods_ExamProject.framework in Frameworks */,
 				811E5EC6E9FCA0E6BC864BA1 /* Pods_ExampleProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,13 +216,13 @@
 		36F0041722140DF100695C57 = {
 			isa = PBXGroup;
 			children = (
-				36F0042222140DF100695C57 /* ExamProject */,
-				36F0043722140DF100695C57 /* ExamProjectTests */,
-				36F0044222140DF100695C57 /* ExamProjectUITests */,
+				36F0042222140DF100695C57 /* ExampleProject */,
+				36F0043722140DF100695C57 /* ExampleProjectTests */,
+				36F0044222140DF100695C57 /* ExampleProjectUITests */,
 				36F0042122140DF100695C57 /* Products */,
 				4A5FC7AEFE98CA34D70C69FC /* Pods */,
 				78ACA75B6872ED2BF0DE9AF9 /* Frameworks */,
-				36F0045422140EFB00695C57 /* ExamProject-Bridging-Header.h */,
+				36F0045422140EFB00695C57 /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,7 +236,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36F0042222140DF100695C57 /* ExamProject */ = {
+		36F0042222140DF100695C57 /* ExampleProject */ = {
 			isa = PBXGroup;
 			children = (
 				36E02F8E2216CDB5005D1E2B /* Utils */,
@@ -252,25 +250,25 @@
 				36F0042A22140DF100695C57 /* Assets.xcassets */,
 				36F0042F22140DF100695C57 /* Info.plist */,
 			);
-			path = ExamProject;
+			path = ExampleProject;
 			sourceTree = "<group>";
 		};
-		36F0043722140DF100695C57 /* ExamProjectTests */ = {
+		36F0043722140DF100695C57 /* ExampleProjectTests */ = {
 			isa = PBXGroup;
 			children = (
 				36F0043822140DF100695C57 /* ExamProjectTests.swift */,
 				36F0043A22140DF100695C57 /* Info.plist */,
 			);
-			path = ExamProjectTests;
+			path = ExampleProjectTests;
 			sourceTree = "<group>";
 		};
-		36F0044222140DF100695C57 /* ExamProjectUITests */ = {
+		36F0044222140DF100695C57 /* ExampleProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
 				36F0044322140DF100695C57 /* ExamProjectUITests.swift */,
 				36F0044522140DF100695C57 /* Info.plist */,
 			);
-			path = ExamProjectUITests;
+			path = ExampleProjectUITests;
 			sourceTree = "<group>";
 		};
 		36F0045122140E9800695C57 /* Networking */ = {
@@ -720,15 +718,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4472LWKVEJ;
-				INFOPLIST_FILE = ExamProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ExampleProject/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ooe.ExamProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ooe.ExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ExamProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -743,15 +741,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4472LWKVEJ;
-				INFOPLIST_FILE = ExamProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ExampleProject/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ooe.ExamProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ooe.ExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ExamProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
