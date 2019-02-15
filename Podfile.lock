@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Alamofire-SwiftyJSON (3.0.0):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0.0)
+  - Kingfisher (4.6.4)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - SwiftyJSON (4.0.0)
+  - UIScrollView-InfiniteScroll (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire-SwiftyJSON
+  - Kingfisher (= 4.6.4)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - UIScrollView-InfiniteScroll (= 1.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Alamofire-SwiftyJSON
+    - Kingfisher
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SwiftyJSON
+    - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
+
+PODFILE CHECKSUM: d829383cab9855b301695f9adf427a5c2085e128
+
+COCOAPODS: 1.6.0.beta.1
